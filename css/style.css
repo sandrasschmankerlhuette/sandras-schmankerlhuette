@@ -29,7 +29,7 @@ header{
 
     width:100%;
 
-    padding:14px 45px;
+    padding:12px 6%;
 
     display:flex;
 
@@ -51,17 +51,25 @@ header{
 
 .logo{
 
-   color:white;
-    font-size:26px;
-    font-weight:800;
+    display:flex;
+
+    align-items:center;
+
 }
 
-.logo span{
-    display:block;
-    font-size:15px;
-    color:#f5b041;
-    letter-spacing:3px;
-    text-transform:uppercase;
+.logo img{
+
+    height:90px;
+
+    width:auto;
+
+    transition:.3s;
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.05);
 
 }
 
@@ -1040,6 +1048,7 @@ FOOTER
     color:#dddddd;
 
     line-height:1.8;
+    font-size:18px;
 
 }
 
@@ -1206,5 +1215,146 @@ SPEISEKARTE
 grid-template-columns:1fr;
 
 }
+
+}
+.badge{
+
+    display:inline-block;
+
+    background:#4b2e1e;
+
+    color:white;
+
+    padding:8px 16px;
+
+    border-radius:25px;
+
+    margin:25px 28px 10px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+/*====================================================
+STANDORTE
+====================================================*/
+
+.locations{
+
+    padding:120px 0;
+
+    background:white;
+
+}
+
+.location-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+    width:min(92%,1100px);
+
+    margin:60px auto;
+
+}
+
+.location-card{
+
+    background:#faf7f2;
+
+    padding:45px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.location-card h3{
+
+    color:#4b2e1e;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.location-card p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+.location-card strong{
+
+    display:block;
+
+    margin-top:25px;
+
+    color:#d4a017;
+
+    font-size:24px;
+
+}
+
+@media(max-width:900px){
+
+.location-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*====================================================
+RECHTLICHES
+====================================================*/
+
+.legal{
+
+    padding:180px 0 100px;
+
+}
+
+.legal h1{
+
+    font-family:'Playfair Display',serif;
+
+    color:#4b2e1e;
+
+    margin-bottom:40px;
+
+    font-size:58px;
+
+}
+
+.legal h2{
+
+    margin-top:40px;
+
+    color:#d4a017;
+
+    font-size:30px;
+
+}
+
+.legal p{
+
+    margin-top:15px;
+
+    line-height:1.9;
+
+    font-size:20px;
 
 }
